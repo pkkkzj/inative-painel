@@ -1,8 +1,6 @@
--- Inative Painel - Loader com Whitelist
 local Players = game:GetService("Players")
 local player = Players.LocalPlayer
 
--- Usuários autorizados
 local whitelist = {"doxepinas", "HeellcatX"}
 
 local function isWhitelisted()
@@ -19,5 +17,4 @@ if not isWhitelisted() then
     return
 end
 
--- Carregar script ofuscado
 loadstring(game:HttpGet("https://raw.githubusercontent.com/pkkkzj/inative-painel/main/InativePainel.lua"))()
